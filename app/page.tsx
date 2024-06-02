@@ -5,11 +5,11 @@ import QuadColorBox from "@/components/QuadColorBox";
 import { generateQuadColors } from "@/utils/generate_colors";
 
 const palettes = [
-  { name: "Blue", colors: generateQuadColors('#2A4073') },
-  { name: "Red", colors: generateQuadColors('#7E0F09') },
-  { name: "Green", colors: generateQuadColors('#005E15') },
-  { name: "Yellow", colors: generateQuadColors('#ADA250') },
-  { name: "Dark", colors: generateQuadColors('#3E1E00') }
+  { name: "Blue", colors: generateQuadColors('#2A4073', 5) },
+  { name: "Red", colors: generateQuadColors('#7E0F09', 5) },
+  { name: "Green", colors: generateQuadColors('#005E15', 5) },
+  { name: "Yellow", colors: generateQuadColors('#ECE038', 10) },
+  { name: "Dark", colors: generateQuadColors('#0c0c0c', 20) }
 ];
 
 const Home: React.FC = () => {
