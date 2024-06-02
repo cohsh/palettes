@@ -1,8 +1,20 @@
-export default function Home() {
+'use client';
+
+import React from "react";
+import ColorBox from "@/components/ColorBox";
+
+const Home: React.FC = () => {
   return (
     <main>
-      <h1>Test</h1>
-      <div class="square"></div>
+      <div>
+        <h1>Palettes</h1>
+        <ColorBox color='blue'/>
+        <ColorBox color='red'/>
+        <ColorBox color='green'/>
+        <ColorBox color='yellow'/>
+      </div>
     </main>
   );
 }
+
+export default Home;
