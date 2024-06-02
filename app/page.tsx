@@ -4,11 +4,12 @@ import React from "react";
 import QuadColorBox from "@/components/QuadColorBox";
 
 const Home: React.FC = () => {
+  const colors = ['blue', 'red', 'green', 'yellow']
   return (
     <main>
       <div>
         <h1>Palettes</h1>
-        <QuadColorBox colors={['blue', 'red', 'green', 'yellow']}/>
+        <QuadColorBox colors={colors}/>
       </div>
     </main>
   );
