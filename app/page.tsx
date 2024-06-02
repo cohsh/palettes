@@ -3,6 +3,8 @@
 import React from "react";
 import QuadColorBox from "@/components/QuadColorBox";
 import { generateQuadColors } from "@/utils/generate_colors";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const palettes = [
   { name: "Blue", colors: generateQuadColors('#2A4073', 5) },
@@ -24,6 +26,7 @@ const Home: React.FC = () => {
           </div>
         ))}
       </div>
+      <ToastContainer />
     </main>
   );
 }
