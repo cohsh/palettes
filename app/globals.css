@@ -5,3 +5,10 @@
 body {
   color: rgb(183, 255, 0);
 }
+
+.square{
+  position: relative;
+  width: 10%;
+  padding-top: 10%;
+  background: green;
+}
