@@ -2,12 +2,11 @@
 
 import React from "react";
 import QuadColorBox from "@/components/QuadColorBox";
-import { generateQuadColors } from "@/utils/generate_colors";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const palettes = [
-  { name: "Blue", colors: ['#2A4073'] },
+  { name: "Progress Report by Marp", colors: ['#008DBD', '#FDFCF5', '#6B818E', 'black'] },
 ];
 
 const Home: React.FC = () => {
