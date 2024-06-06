@@ -1,12 +1,13 @@
 'use client';
 
 import React from "react";
-import QuadColorBox from "@/components/QuadColorBox";
+import ColorBox from "@/components/ColorBox";
 import { generateQuadColors } from "@/utils/generate_colors";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const palettes = [
+  { name: "Black and White", colors: ['#000000', '#FFFFFF'] },
   { name: "Blue", colors: generateQuadColors('#2A4073', 5) },
   { name: "Red", colors: generateQuadColors('#7E0F09', 5) },
   { name: "Green", colors: generateQuadColors('#005E15', 5) },
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
         {palettes.map(palette => (
           <div key={palette.name}>
             <h2>{palette.name}</h2>
-            <QuadColorBox colors={palette.colors}/>
+            <ColorBox colors={palette.colors}/>
           </div>
         ))}
       </div>
