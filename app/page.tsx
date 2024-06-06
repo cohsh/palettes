@@ -5,6 +5,7 @@ import ColorBox from "@/components/ColorBox";
 import { generateQuadColors } from "@/utils/generate_colors";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 const palettes = [
   { name: "Black and White", colors: ['#000000', '#FFFFFF'] },
@@ -18,6 +19,9 @@ const palettes = [
 const Home: React.FC = () => {
   return (
     <main>
+        <nav>
+          Common | <Link href="personal">Personal</Link>
+        </nav>
       <div>
         {palettes.map(palette => (
           <div key={palette.name}>

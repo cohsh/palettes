@@ -4,6 +4,7 @@ import React from "react";
 import ColorBox from "@/components/ColorBox";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 const palettes = [
   { name: "Progress Report by Marp", colors: ['#008DBD', '#FDFCF5', '#6B818E'] },
@@ -16,6 +17,9 @@ const palettes = [
 const Home: React.FC = () => {
   return (
     <main>
+      <nav>
+        <Link href="/">Common</Link> | Personal
+      </nav>
       <div>
         {palettes.map(palette => (
           <div key={palette.name}>
