@@ -7,7 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
 
 const palettes = [
-  { name: "Slide 2024 June", colors: ['#008DBD', '#FDFCF5', '#6B818E'] },
+  { name: "JPS 2024 Sep. (Oral)", colors: ['#1F77B4', '#FF7F0E'] },
+  { name: "Slide 2024 Jun.", colors: ['#008DBD', '#FDFCF5', '#6B818E'] },
   { name: "JPS 2022 Mar. (Oral)", colors: ['#4082BE', '#EE220C']},
   { name: "Poster 2022 Feb.", colors: ['#004CC7', '#004D80']},
   { name: "Research Website (2022-)", colors: ['#A4CA68', '#DAEAD0', '#43341B', '#005E15']},
